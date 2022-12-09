@@ -13,21 +13,21 @@ class Config(object):
     # هنا اسم حسابك
     ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
     # ايبيات حسابك احصل عليهن من موقع my.telegram.org
-    APP_ID = int(os.environ.get("APP_ID", 6))
-    API_HASH = os.environ.get("API_HASH") or None
+    APP_ID = int(os.environ.get("APP_ID", 28624076))
+    API_HASH = os.environ.get("API_HASH", "439d58a783f6e70086ea81ba5baa5207") or None
     # داتا بيس تلقائي من هيروكو او استخدم elepthntsql
-    DB_URI = os.environ.get("DATABASE_URL", None)
+    DB_URI = os.environ.get("DATABASE_URL", "postgresql://postgres:g3PjwrB00r4JolkX1Vak@containers-us-west-130.railway.app:5549/railway")
     # كود تيرمكس باستخدام امر python3 stringsetup.py او من موقع https://replit.com/@JMTHONAR/stringsession
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOL0BuzT-8R4XGALdnDpVTKUzmO-3dCbtCJKIniJoRHk3NzJ5K6bC2wcPD1xqu07uD78ejjZOhzlsB8rxCSuqW7LSSXr-1y_cUedTXirljvVWmoLqxouoNHCGOCNzRlNutj0NeGSUZBhFphwRL2WEl3uexcrTrbfREuXs0UAV6IkuYRf7zD5YJf3mEZNF9cIryMyhkE0_arVaPh6Y6ieNS0hpycaAGfI_BoDrg4gj8ZQ5G3TU_NWGkVw1R2yWwh8_VK8Pz4VFu3NlgedXMpvX-NQLuL54_zJkjVZTDiLZO0cMwrlgwPWyPWBzqXxKr7aB9m4LqbkzYvEySPeSgk2W0xiVYqI=")
     # معرف و توكن بوتك
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN") or os.environ.get(
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN","5591908245:AAEHQXlFdzQFn2jU9CoeStRoH_q0BA52M80") or os.environ.get(
         "TG_BOT_TOKEN_BF_HER", None
     )
     TG_BOT_USERNAME = None
     # المنطقه الزمنيه احصل عليها من هنا  http://www.timezoneconverter.com/cgi-bin/findzone.tzc
     TZ = os.environ.get("TZ", "Asia/Baghdad")
     # رابط الريبو
-    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/sbb-b/sbb_b")
+    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/princesssgirlxd/sbb_b")
     # ملفات خارجيه اضافيه
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
     if bool(EXTERNAL_REPO and (EXTERNAL_REPO.lower() != "false")):
@@ -46,9 +46,10 @@ class Config(object):
     DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
     # فارات اساسية ورئيسية
     # فار كروبك الخاص هنا تخلي ايدي الكروب عبر امر .الايدي
-    PRIVATE_GROUP_BOT_API_ID = int(os.environ.get("PRIVATE_GROUP_BOT_API_ID") or 0)
+    PRIVATE_GROUP_BOT_API_ID = int(os.environ.get("PRIVATE_GROUP_BOT_API_ID","-1001879384818") or 0)
     # فار كروبك الخاص هنا تخلي ايدي الكروب عبر امر .الايدي
-    PRIVATE_GROUP_ID = int(os.environ.get("PRIVATE_GROUP_ID") or 0)
+    PRIVATE_GROUP_ID = int(os.environ.get("PRIVATE_GROUP_ID","-1001879384818"
+) or 0)
     FBAN_GROUP_ID = int(os.environ.get("FBAN_GROUP_ID") or 0)
     # فار كروبك الخاص هنا تخلي ايدي الكروب عبر امر .الايدي
     PRIVATE_CHANNEL_BOT_API_ID = int(os.environ.get("PRIVATE_CHANNEL_BOT_API_ID") or 0)
@@ -57,11 +58,11 @@ class Config(object):
     # هنا اسم التطبيق الخاص بك
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     # ايدي حسابك
-    OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
+    OWNER_ID = int(os.environ.get("OWNER_ID","1936119750") or 0)
     # ايدي كروب لتخزين حتى يحفظ رسائل الخاص والمجمواعت الي تسويلك تاك
     PM_LOGGER_GROUP_ID = int(
-        os.environ.get("PM_LOGGER_GROUP_ID")
-        or os.environ.get("PM_LOGGR_BOT_API_ID")
+        os.environ.get("PM_LOGGER_GROUP_ID","-1001879384818")
+        or os.environ.get("PM_LOGGR_BOT_API_ID","-1001879384818")
         or 0
     )
     TIME_JM = os.environ.get("TIME_JM", None)
